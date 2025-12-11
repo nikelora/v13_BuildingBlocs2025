@@ -66,6 +66,7 @@
 .main_content ul{
     font-size: 1.2rem;
     padding-top: 10px;
+    padding-left: 2rem;
     padding-bottom: 10px;
     margin-bottom:0.4rem;
 }
@@ -118,7 +119,16 @@ strong {
         margin-top: 1rem;
     }
 
-    .main_content p, .main_cotent ul{
+    .main_content p{
+        font-size: 1rem;
+    }
+
+    .main_cotent ul{
+        font-size: 1rem;
+        margin-left: 1.5rem;
+    }
+
+    .main_content li{
         font-size: 1rem;
     }
 
