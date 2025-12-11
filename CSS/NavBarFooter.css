@@ -64,8 +64,9 @@ body {
 }
 
 .content {
-    padding: 40px;
+    padding: 15px;
     flex: 1;
+    margin-top: 90px;       /* so that is dosen't get covered by the navbar */
 }
 
 .placeholder-box {
