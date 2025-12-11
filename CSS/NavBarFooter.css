@@ -24,6 +24,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    /* Make the navbar fixed to its position */
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
 }
 
 .nav-left {
@@ -57,14 +64,14 @@ body {
 }
 
 .content {
-    min-height: 500px;
-    padding: 40px;
+    padding: 15px;
     flex: 1;
+    margin-top: 90px;       /* so that is dosen't get covered by the navbar */
 }
 
 .placeholder-box {
     width: 100%;
-    height: 400px;
+    height: 1000px;
     background-color: #f3f3f3;
     border: 2px dashed #ccc;
 }
@@ -80,6 +87,7 @@ body {
     align-items: flex-start;
     gap:10px;
 
+    /* Ensure this sticks to the bottom of the screen */
     flex-shrink:0;
 }
 
