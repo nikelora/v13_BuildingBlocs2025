@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* For Navbar */
+.navbar {
+    width: 100%;
+    background-color: black;
+    color:white;
+    padding:15px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.logo {
+    width: auto;
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+.content {
+    min-height: 500px;
+    padding: 40px;
+    flex: 1;
+}
+
+.placeholder-box {
+    width: 100%;
+    height: 400px;
+    background-color: #f3f3f3;
+    border: 2px dashed #ccc;
+}
+
+/* For footer */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:10px;
+
+    flex-shrink:0;
+}
+
+.footer-column, .footer-left, .footer-right {
+    max-width: 250px;
+}
+
+.socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+}
+
+/* Force image to fit in the size */
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
