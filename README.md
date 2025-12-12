@@ -122,11 +122,20 @@ Javascript: Used to implement interactive features such as the chatbot and clini
 ### Information
 - [Primary Mental Healthcare Services – MOH Singapore](https://www.moh.gov.sg/seeking-healthcare/find-a-facility-or-service/mental-health-services/primary-mental-healthcare-services/)
 
+### Logo Design
+- Created in Figma by the project team
+
 ### Image Credits
 - [Erik Mclean](https://unsplash.com/@introspectivedsgn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) – Medical Clinic Image  
 - [Joshua Earle](https://unsplash.com/@joshuaearle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) – Inspirational Hero Image  
 - [Emma Simpson](https://unsplash.com/@esdesignisms?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) – Self-Reflection Image  
 - [Hanna Morris](https://unsplash.com/@hcmorr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) – Help/Support Image  
+- [Zac Durant](https://unsplash.com/@zacdurant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) – Silhouette Photo on Cliff  
 
 Images from [Unsplash](https://unsplash.com/).
+
+### Icon Credits
+- [Tweet icons created by Freepik – Flaticon](https://www.flaticon.com/free-icons/tweet)  
+- [Instagram logo icons created by Freepik – Flaticon](https://www.flaticon.com/free-icons/instagram-logo)  
+- [Youtube icons created by Freepik – Flaticon](https://www.flaticon.com/free-icons/youtube)
       
