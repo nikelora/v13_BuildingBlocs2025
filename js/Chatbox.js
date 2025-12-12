@@ -42,6 +42,12 @@ function initializeChatbox() {
         href: "/Pages/AboutUs.html",
         linkText: "About SerenityHub",
       },
+      {
+        label: "Looking for approved clinics?",
+        replyText: "You can go to this link:",
+        href: "/Pages/Clinics.html",
+        linkText: "Available Clinics",
+      },
     ];
 
     function openChatbox() {
