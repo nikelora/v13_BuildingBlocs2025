@@ -23,9 +23,6 @@ Overall, as our first hackathon experience, it definitely would not be our last.
 
 ## Instruction on setting up and running the project
 
-### Accessing our website
-You can view our website through here: [Link to Website on Github-Pages](https://nikelora.github.io/v13_BuildingBlocs2025/).
-
 ### Get a copy of our website model
 There are multiple ways to get a copy or download of our website model.
 
