@@ -1,0 +1,167 @@
+[
+    {
+        "area": "Central",
+        "name": "57 Medical Clinic (Geylang Bahru)",
+        "address": "Blk 57 Geylang Bahru #01-3505, 330057",
+        "contact": "5594 7078",
+        "doctor": "Dr Xu Kuan",
+        "website": "https://www.57medical.sg/",
+        "image": ""
+    },
+    {
+        "area": "Central",
+        "name": "T Medical Clinic (Kallang)",
+        "address": "Blk 5 Upper Boon Keng Road Kallang Heights #01-14, 380005",
+        "contact": "6970 0882",
+        "doctor": "Dr Tan Yuan Zi",
+        "website": "https://tmedical.sg/",
+        "image": ""
+    },
+    {
+        "area": "Central",
+        "name": "Braddel Medical Clinic",
+        "address": "Blk 124 Lorong 1 Toa Payoh #01-489, 310124",
+        "contact": "6253 6288",
+        "doctor": "Dr Chin Yuin Cheng, Dr Lee Cheng Da",
+        "website": "http://www.heartlandhealth.sg/",
+        "image": ""
+    },
+    {
+        "area": "Central",
+        "name": "Raffles Medical (Marina Square)",
+        "address": "6 Raffles Boulevard #01-212 Marina Square, 039594",
+        "contact": "6339 6644",
+        "doctor": "Dr Balbir Singh S/O Mal Singh",
+        "website": "https://www.rafflesmedicalgroup.com/clinic/i12-katong/",
+        "image": ""
+    },
+    {
+        "area": "Central",
+        "name": "The Good Life Medical Center",
+        "address": "820 Thomson Road Mount Alvernia Hospital #07-57, 574623",
+        "contact": "6710 7551",
+        "doctor": "Dr Carol Tan Yean Eng",
+        "website": "https://www.thegoodlifehealth.sg/",
+        "image": ""
+    },
+
+    {
+        "area": "East",
+        "name": "Bedok Medical Centre Pte. Ltd",
+        "address": "18 Bedok South Road #01-57, 460018",
+        "contact": "6241 4111",
+        "doctor": "Dr Chua Lee Lea Im",
+        "website": "https://book.health.gov.sg/book?institutionId=1015&source=rwg&hl=en-SG&gei=gLo7acj7BqiYseMPhdHz6Ao",
+        "image": ""
+    },
+    {
+        "area": "East",
+        "name": "Heartland Health (Tampines)",
+        "address": "730 Tampines Street 71 #01-51, 520730",
+        "contact": "6588 7833",
+        "doctor": "Dr Fairuz Bin Ahmad, Dr Lee Cheng Da, Dr Thambiah Mattew Dhanaraj",
+        "website": "https://www.heartlandhealth.sg/",
+        "image": ""
+    },
+    {
+        "area": "East",
+        "name": "Wong Clinic",
+        "address": "Blk 539 Bedok North Street 3 #01-603, 460539",
+        "contact": "6241 2267",
+        "doctor": "Dr Wong Teck Boon Lawrence",
+        "website": "https://book.health.gov.sg/book?institutionId=254&source=rwg&hl=en-SG&gei=vbo7aYT0HvmwwcsP7ZKKsQg",
+        "image": ""
+    },
+
+    {
+        "area": "North",
+        "name": "Acumed Medical Group (Woodlands)",
+        "address": "Blk 111 Woodlands Street 13 #01-78, 730111",
+        "contact": "6362 7789",
+        "doctor": "Dr Kiu Oi Nah Juliana",
+        "website": "https://www.acumed.com.sg/book-appointment/",
+        "image": ""
+    },
+    {
+        "area": "North",
+        "name": "T Medical Clinic",
+        "address": "115 Canberra Walk #01-05, 750115",
+        "contact": "6909 7550",
+        "doctor": "Dr Tan Inn Lin Elaine, Dr Tan Yuan Zi",
+        "website": "https://tmedical.sg/",
+        "image": ""
+    },
+    {
+        "area": "North",
+        "name": "Bestmed Family Clinic And Home Care",
+        "address": "Blk 126 Canberra Street #01-04, 750126",
+        "contact": "6518 4268",
+        "doctor": "Dr Habeeb Shakila Banu",
+        "website": "https://www.bestmedfamilyclinic.com/",
+        "image": ""
+    },
+    {
+        "area": "North",
+        "name": "SATA Commonwealth Woodlands Medical Centre",
+        "address": "900 South Woodlands Drive #04-01 Woodlands Civic Centre, 730900",
+        "contact": "63244 6686",
+        "doctor": "Dr Lai Hwee Yee",
+        "website": "http://www.sata.com.sg/",
+        "image": ""
+    },
+    {
+        "area": "North",
+        "name": "Yim Medical Centre",
+        "address": "Blk 678A Woodlands Ave 6 #03-16, 731678",
+        "contact": "6893 9181",
+        "doctor": "Dr Jean Yim",
+        "website": "https://www.yimmedicalcentre.com/",
+        "image": ""
+    },
+
+    {
+        "area": "West",
+        "name": "Acumed Medical Group (Jurong West)",
+        "address": "1 Jurong West Central 2 Jurong Point Jp 1 #B1-19E, 648886",
+        "contact": "6792 3822",
+        "doctor": "Dr Lee Jinfeng Natalie",
+        "website": "http://www.acumed.com.sg/book-appointment/",
+        "image": ""
+    },
+    {
+        "area": "West",
+        "name": "CCK Family Clinic",
+        "address": "304 Choa Chu Kang Ave 4 #01-653, 680304",
+        "contact": "6891 0338",
+        "doctor": "Dr Eng Soo Kiang",
+        "website": "https://www.centralclinic.com.sg/choa-chu-kang-clinic-24-hour-clinic",
+        "image": ""
+    },
+    {
+        "area": "West",
+        "name": "Healthlife Family Clinic",
+        "address": "296A Bukit Batok Street 22 #01-64, 651296",
+        "contact": "6904 8680",
+        "doctor": "Dr Yong Yuan Chen",
+        "website": "https://www.healthcare.com.sg/item/healthlife-family-clinic-bukit-batok/",
+        "image": ""
+    },
+    {
+        "area": "West",
+        "name": "Raffles Medical (Clementi)",
+        "address": "Blk 446 Clementi Ave 3 #01-189, 120446",
+        "contact": "6872 9043",
+        "doctor": "Dr Tan Jia Qi Chelsea",
+        "website": "https://www.rafflesmedicalgroup.com/services/family-medicine/",
+        "image": ""
+    },
+    {
+        "area": "West",
+        "name": "MyHealth Medical Centre",
+        "address": "Blk 501 West Coast Drive #01-256, 120501",
+        "contact": "6872 6920",
+        "doctor": "Dr Saiful Nizam Bin Subari",
+        "website": "http://www.myhealthmedctr.sg/",
+        "image": ""
+    }
+]

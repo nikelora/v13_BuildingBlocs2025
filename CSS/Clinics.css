@@ -1,0 +1,136 @@
+/* .clinics {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+} */
+
+/* body {
+    padding: clamp(1rem, 2vw, 2rem);
+    background-color: #f5f5f5;
+} */
+
+.clinics h1 {
+    text-align: center;
+    margin-bottom: clamp(1rem, 2vw, 2rem); /* responsive margin */
+    font-size: clamp(1.5rem, 3vw, 2.5rem); /* responsive font size */
+}
+
+/* Search Bar */
+.search-bar {
+    position: relative;
+    text-align: center;
+    margin-bottom: clamp(1rem, 2vw, 2rem);
+}
+
+/* Wrapper for input + icons */
+.search-input-wrapper {
+    position: relative;
+    display: inline-block;
+    width: clamp(200px, 80%, 500px);
+}
+
+/* Input field padding adjusted to leave space for icons */
+.search-input-wrapper input {
+    width: 100%;
+    padding: clamp(0.5rem, 1vw, 1rem) clamp(2.5rem, 5vw, 3rem) clamp(0.5rem, 1vw, 1rem) clamp(2.5rem, 5vw, 3rem);
+    font-size: clamp(0.9rem, 1vw, 1rem);
+    border-radius: clamp(4px, 1vw, 5px);
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+/* Search Icon on the left */
+.search-input-wrapper .search-icon {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    pointer-events: none; /* so clicks go to input */
+}
+
+/* Clear/Cross Icon on the right */
+.search-input-wrapper .clear-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s, filter 0.2s;
+}
+
+.search-input-wrapper .clear-icon:hover {
+    opacity: 1;
+    filter: brightness(0.8); /* highlight/shade effect */
+}
+
+/* Clinic List Container */
+.clinic-container {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 2vw, 2rem); /* responsive gap */
+}
+
+/* Single Clinic Item */
+.clinic-item {
+    display: flex;
+    background-color: white;
+    border-radius: clamp(6px, 1vw, 8px);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-left: clamp(1rem, 5vw, 6rem);   /* space on left */
+    margin-right: clamp(1rem, 5vw, 6rem);  /* space on right */
+}
+
+.clinic-item img {
+    width: clamp(150px, 25vw, 200px); /* responsive width */
+    height: clamp(120px, 20vw, 150px); /* responsive height */
+    object-fit: cover;
+}
+
+.clinic-details {
+    padding: clamp(0.8rem, 2vw, 1.5rem) clamp(1rem, 3vw, 1.5rem);
+    flex: 1;
+}
+
+.clinic-details h2 {
+    margin-bottom: clamp(0.3rem, 1vw, 0.5rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.clinic-details p {
+    margin-bottom: clamp(0.2rem, 0.5vw, 0.3rem);
+    font-size: clamp(0.9rem, 1vw, 1rem);
+}
+
+.area-filters {
+    text-align: center;
+    margin-bottom: clamp(1rem, 2vw, 1.5rem);
+}
+
+.area-filters label {
+    margin-right: clamp(0.5rem, 1vw, 1rem);
+    font-size: clamp(0.9rem, 1vw, 1rem);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .clinic-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .clinic-item img {
+        width: 100%;
+        height: clamp(150px, 25vw, 200px); /* responsive height */
+    }
+
+    .clinic-details {
+        padding: clamp(0.8rem, 2vw, 1rem);
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SerenityHub | Clinics</title>
+    <link rel="stylesheet" href="/CSS/NavBarFooter.css"> <!-- Stylesheet for Navbar-->
+    <link rel="stylesheet" href="/CSS/Chatbox.css"> <!-- Stylesheet for chatbox -->
+    <link rel="stylesheet" href="/CSS/Clinics.css"> <!-- Stylesheet for clinic -->
+    <script src="js/Chatbox.js" defer></script>
+</head>
+<body>
+    <!-- Start of NavBar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="/Assets/PlaceholderLogo.png" class="logo" alt="logo">
+            <!-- <span class="brand"></span> -->
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#"></a>More</li>
+            <li><a href="#"></a>Information</li>
+            <li><a href="#"></a>About Us</li>
+        </ul>
+    </nav>
+    <!-- End of Navbar -->
+
+        <!-- Enter Website Stuff Here -->
+        <main class="content">
+            <!-- PLACE YOUR MAIN CONTENT HERE -->
+            <section class="clinics">
+                <h1>Find a Mental Health Clinic Near You</h1>
+
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <div class="search-input-wrapper">
+                        <img src="/Assets/Search.png" alt="Search" class="search-icon">
+                        <input type="text" id="searchInput" placeholder="Search by name or area..." autocomplete="off">
+                        <img src="/Assets/Cross.png" alt="Clear" class="clear-icon">
+                    </div>
+                </div>
+
+                <!-- Area Filters -->
+                <div class="area-filters">
+                    <label><input type="checkbox" class="area-checkbox" value="Central"> Central</label>
+                    <label><input type="checkbox" class="area-checkbox" value="East"> East</label>
+                    <label><input type="checkbox" class="area-checkbox" value="North"> North</label>
+                    <label><input type="checkbox" class="area-checkbox" value="West"> West</label>
+                </div>
+
+                <!-- Clinic List Container -->
+                <div class="clinic-container" id="clinicContainer">
+                    <!-- JS will dynamically populate clinics here -->
+                     <script src="/js/clinics.js" defer></script>
+                </div>
+            </section>
+        </main>
+
+        <!-- Chatbox is positioned here, needs to be in every HTML page -->
+         <div id="chatbox-container"></div>
+
+        <!-- Start of Footer -->
+         <footer class="footer">
+            <div class="footer-left">
+            <h3>Contact Us</h3>
+            <p>123 Example Street, Sample City<br> <!-- br means Break -->
+                ST 000000<br>
+                +65 9876 5432<br>
+                serenityhub@gmail.com
+            </p>
+            </div>
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <h3>Information</h3>
+            </div>
+            <div class="footer-column">
+                <h3>Book An Appointment</h3>
+            </div>
+
+            <div class="footer-right">
+                <h3>Our Socials</h3>
+                <div class="socials">
+                    <div class="social-icon">
+                        <img src="/Assets/Instagram.png" alt="Instagram">
+                    </div>
+                    <div class="social-icon">
+                        <img src="/Assets/X.png" alt="X (Twitter)">
+                    </div>
+                    <div class="social-icon">
+                        <img src="/Assets/Youtube.png" alt="Youtube">
+                    </div>
+                </div>
+            </div>
+         </footer>
+         <!-- End of footer -->
+    
+</body>
+</html> <!-- End of HTML -->
