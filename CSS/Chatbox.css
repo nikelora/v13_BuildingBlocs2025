@@ -12,6 +12,7 @@
     background: black;
     color: #fff;
     box-shadow: 0 4px rgba(0,0,0,0.2);
+    margin-bottom:155px;
 }
 
 /* chatbox popup window */
@@ -29,6 +30,7 @@
     display: none;          
     flex-direction: column;
     font-family: Arial, sans-serif;
+    margin-bottom:155px;
 }
 
 .chatbox-header {
