@@ -1,0 +1,163 @@
+body{
+    background-color: rgb(250, 239, 255); /*looks not bad as well*/
+    /*background-color:rgb(207, 236, 255); /*looks not bad*/
+    /*background-color: #C6D5F9; /*might not keep this as it doesn't give a bright feeling*/
+    background-image:linear-gradient(to bottom right, #ffd1e8, #cce7ff, #e6d1ff);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    min-height: 300px;
+    max-height: 550px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 12px;
+    filter: brightness(50%); /* dims image so text is readable */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.1));
+    z-index: 1;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 90%;
+    max-width: 900px;
+    z-index: 2;
+    padding: 0 1rem;
+}
+
+.hero-text h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+.hero-text h2 {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    margin-bottom: 2rem;
+}
+
+.homepagebtn {
+    display: inline-block;
+    background-color: #ffd1e8; /* pastel pink */
+    color: black;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.homepagebtn:hover {
+    background-color: #ffb3e6; /* slightly deeper pink on hover */
+}
+
+
+/* Container for both sections */
+.info-help-container {
+    display: grid;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+/* Shared section pattern */
+.section-pattern {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+/* Mirror the order for reverse class */
+.section-pattern.reverse {
+    direction: rtl;
+}
+.section-pattern.reverse .section-text,
+.section-pattern.reverse .section-img {
+    direction: ltr;
+}
+
+/* Section Image */
+.section-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Section Text */
+.section-text {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Button styling */
+.homepagebtn {
+    display: inline-block;
+    background-color: #ffd1e8;
+    color: black;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.homepagebtn:hover {
+    background-color: #ffb3e6;
+}
+
+
+/* Responsive for smaller screens */
+@media (max-width: 750px) {
+    .section-pattern {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .section-img {
+        margin-top: 2rem;
+    }
+
+    .section-text {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .hero {
+        max-height: 300px;
+    }
+}
