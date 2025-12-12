@@ -112,10 +112,21 @@ HTML5 is used to structure website pages and for content
 CSS3: Used for design like layout, responsive syling, UI consistency across all pages
 Javascript: Used to implement interactive features such as the chatbot and clinic search functionality
 
+Some key functionalities:
+
+- Interactive Chatbox
+A chatbox is implemented using Javascript and is intended to appear on all pages as a way to provided quick-reply options to guide users to relevant sections based on their decision. Chatbox automatically resets when closed to ensure a clean user experience.
+
+- Clinic Finder
+This feature dynamically loads clinic data from a JSOn file using Javascript. Users can search clinics by name, address, or doctor and filter by region (Central, East, West, North). The results update in real time based on input, with clear feedback if no results are found.
+
+- Responsive Navigation and Layout
+A fixed navigation bar and consistent footer are shared across all pages. The use of CSS allows queries and flexible layouts to ensure the website adapts smoothly to different screen sizes and devices.
+
 ## Declaration on use of AI
 - AI was used to understand as well as developed a few features on the pages.
 - AI was used to help make the markdown neater.
-- AI was used to develop aesthetics 
+- AI was used to help with developing aesthetics 
 
 ## Reference/Credits
 
