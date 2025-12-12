@@ -9,10 +9,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    /* padding: 10px 20px;
-    min-height: 10vh;
-    margin: 0 auto;
-    font-size: 3rem; */
 }
 
 .main{
@@ -104,6 +100,13 @@ strong {
     font-weight: bold; /* Makes text bold */
 }
 
+@media(max-width: 850px){
+    .main_container {
+        grid-template-columns: 1fr; /* single column */
+        padding: 0 40px;            /* optional: reduce side padding */
+    }
+}
+
 @media (max-width: 600px){
     .main h1{
         font-size: 2rem;
@@ -114,6 +117,11 @@ strong {
         max-height: 200px;
     }
 
+    .main_container {
+        grid-template-columns: 1fr; /* single column */
+        padding: 0 20px;            /* optional: reduce side padding */
+    }
+    
     .main_content h2{
         font-size: 1.5rem;
         margin-top: 1rem;
