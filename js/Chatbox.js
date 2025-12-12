@@ -2,16 +2,11 @@
 const chatHTML = `
   <div class="chatbox-popup" id="chatboxPopup">
     <div class="chatbox-header">
-      <span>Chat with us 💬</span>
+      <span>Need some help? 💬</span>
       <button id="closeChatbox" class="close-button">×</button>
     </div>
-    <div class="chatbox-body" id="chatboxBody">
-      <div class="msg bot">Hi! How can I help you today?</div>
-    </div>
-    <div class="chatbox-input-bar">
-      <input type="text" id="chatboxInput" placeholder="Type a message...">
-      <button id="sendButton">Send</button>
-    </div>
+
+    <div class="chatbox-body" id="chatboxBody"></div>
   </div>
 
   <button class="chatbox-toggle" id="chatboxToggle">💬</button>
@@ -29,25 +24,39 @@ function initializeChatbox() {
     const chatboxPopup = document.getElementById("chatboxPopup");
     const chatboxToggle = document.getElementById("chatboxToggle");
     const closeChatbox = document.getElementById("closeChatbox");
-    const chatboxInput = document.getElementById("chatboxInput");
-    const sendButton = document.getElementById("sendButton");
+    //const chatboxInput = document.getElementById("chatboxInput");
+    //const sendButton = document.getElementById("sendButton");
     const chatboxBody = document.getElementById("chatboxBody");
 
+    // add options here for chatbox
+    const chatboxOptions = [
+      {
+        label: "More about Mental Health",
+        replyText: "You can go to this link:",
+        href: "/Pages/Information.html",
+        linkText: "Mental Health Information",
+      },
+      {
+        label: "More about SerenityHub",
+        replyText: "You can go to this link:",
+        href: "/Pages/AboutUs.html",
+        linkText: "About SerenityHub",
+      },
+    ];
+
+    function openChatbox() {
+      chatboxPopup.style.display = "flex"; // keep flex layout
+    }
+
+    function closeChatboxAndReset() {
+      chatboxPopup.style.display = "none";
+      resetChat();
+    }
+
     function toggleChatbox() {
-      const isOpen = chatboxPopup.style.display === "block";
-      
-      if (isOpen) {
-        // chat is closing so delete all messages
-        chatboxBody.innerHTML = "";
-
-        // add a default welcome message
-        const welcome = document.createElement("div");
-        welcome.classList.add("msg", "bot");
-        welcome.textContent = "Hi! How can I help you today?";
-        chatboxBody.appendChild(welcome);
-      }
-
-      chatboxPopup.style.display = isOpen ? "none" : "block";
+      const isOpen = chatboxPopup.style.display === "flex";
+      if (isOpen) closeChatboxAndReset();
+      else openChatbox();
     }
 
     chatboxToggle.addEventListener("click", toggleChatbox);
@@ -61,24 +70,89 @@ function initializeChatbox() {
       chatboxBody.scrollTop = chatboxBody.scrollHeight; // auto-scroll to bottom
     }
 
-    function sendMessage() {
-      const text = chatboxInput.value.trim();
-      if (!text) return;
+    function addBotLinkMessage(prefixText, href, linkText) {
+      const msg = document.createElement("div");
+      msg.classList.add("msg", "bot");
 
-      addMessage(text, "user");     // show user message
-      chatboxInput.value = "";      // clear box
+      const span = document.createElement("span");
+      span.textContent = prefixText + " ";
 
-       // Fake bot reply
-      setTimeout(() => {
-        addMessage("You said: " + text, "bot");
-      }, 400);
+      const a = document.createElement("a");
+      a.href = href;
+      a.textContent = linkText;
+      a.target = "_self";
+
+      msg.appendChild(span);
+      msg.appendChild(a);
+
+      chatboxBody.appendChild(msg);
+      chatboxBody.scrollTop = chatboxBody.scrollHeight;
     }
 
-    sendButton.addEventListener("click", sendMessage);
+    function clearQuickReplies() {
+      const existing = chatboxBody.querySelector(".quick-replies");
+      if (existing) existing.remove();
+    }
 
-    chatboxInput.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") {      //press enter button
-        sendMessage();
-      }
-    });
+    function showQuickReplies() {
+      clearQuickReplies();
+
+      const wrap = document.createElement("div");
+      wrap.className = "quick-replies";
+
+      chatboxOptions.forEach((opt) => {
+        const btn = document.createElement("button");
+        btn.className = "quick-reply-btn";
+        btn.type = "button";
+        btn.textContent = opt.label;
+
+        btn.addEventListener("click", ()=> {
+            // show the chosen option as user message
+            addMessage(opt.label, "user");
+            clearQuickReplies();
+
+            // bot replies with link
+            setTimeout(() => {
+              addBotLinkMessage(opt.replyText, opt.href, opt.linkText);
+
+              // show options again
+              setTimeout(showQuickReplies, 250);
+            }, 200);
+        });
+         wrap.appendChild(btn);
+      });
+
+      chatboxBody.appendChild(wrap);
+      chatboxBody.scrollTop = chatboxBody.scrollHeight;
+    }
+
+    function resetChat() {
+      chatboxBody.innerHTML = "";
+      addMessage("Hello! How can I help you?", "bot");
+      showQuickReplies();
+    }
+
+    // Start state
+    resetChat();
+
+    // function sendMessage() {
+    //   const text = chatboxInput.value.trim();
+    //   if (!text) return;
+
+    //   addMessage(text, "user");     // show user message
+    //   chatboxInput.value = "";      // clear box
+
+    //    // Fake bot reply
+    //   setTimeout(() => {
+    //     addMessage("You said: " + text, "bot");
+    //   }, 400);
+    // }
+
+    // sendButton.addEventListener("click", sendMessage);
+
+    // chatboxInput.addEventListener("keydown", (e) => {
+    //   if (e.key === "Enter") {      //press enter button
+    //     sendMessage();
+    //   }
+    // });
 }
