@@ -2,6 +2,15 @@
 
 **Building Blocs 2025 Hackathon Project**
 
+As tired, overworked university students in Singapore, mental health is a very important topic for us but it's not always talked about often. While it is encouraged, many students feel the need to not pay attention to it and instead focus on putting more burden just so they can focus on their education. Education is just as important as mental health, which is why we decided to create a website that spreads awareness of mental health and to show it is not a weak topic. We hope to encourage students or just the general public that no matter what, mental health should not be ignored. 
+
+This is our first hackathon and while it is very exciting and a good experience, we definitely had challenges. While both of us have coding experience, one did not have any knowledge of HTML, CSS, Javascript and the other had learned it a long time ago and therefore, had unfortunately forgotten most of it. 
+
+So we spend a lot of time researching through various websites and watching many youtube videos before and during the hackathon. We also had used the help of AI to better explain to us the code and its features. 
+
+Overall, as our first hackathon experience, it definitely would not be our last. Apart from having fun (sometimes), we also gained a lot of new knowledge that we would put to good use in our future careers. 
+
+
 ---
 
 ## Table of Contents
@@ -95,9 +104,18 @@ Multiple ways to launch it
 
 ---
 
+### 7. Brief Technical Descriptions
+This project is a front-end web page developed using HTML, CSS and Javascript. It focuses on providing
+mental health information and support through a clean, responsive and user-friendly interface.
+
+HTML5 is used to structure website pages and for content
+CSS3: Used for design like layout, responsive syling, UI consistency across all pages
+Javascript: Used to implement interactive features such as the chatbot and clinic search functionality
+
 ## Declaration on use of AI
 - AI was used to understand as well as developed a few features on the pages.
 - AI was used to help make the markdown neater.
+- AI was used to develop aesthetics 
 
 ## Reference/Credits
 
